@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Online Book Store</h1>
+        <div class="cart">
+            <button onclick="viewCart()">View Cart</button>
+            <span id="cart-count">0</span> items
+        </div>
+    </header>
+
+    <main>
+        <section class="book-list">
+            <div class="book-item">
+                <img src="Bookt1.png" alt="Book 1">
+                <h2>Python </h2>
+                <p>Author: Author 1</p>
+                <p class="price">$10.99</p>
+                <button onclick="addToCart('Book Title 1', 10.99)">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="Bookt2.png" alt="Book 2">
+                <h2>Cloud Computing</h2>
+                <p>Author: Author 2</p>
+                <p class="price">$12.99</p>
+                <button onclick="addToCart('Book Title 2', 12.99)">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="Bookt3.png" alt="Book 3">
+                <h2>Java Programming</h2>
+                <p>Author: Author 3</p>
+                <p class="price">$8.99</p>
+                <button onclick="addToCart('Book Title 3', 8.99)">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="Bookt4.png" alt="Book 3">
+                <h2>Blockchain Consensus</h2>
+                <p>Author: Author 4</p>
+                <p class="price">$10.99</p>
+                <button onclick="addToCart('Book Title 3', 8.99)">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="Bookt5.png" alt="Book 3">
+                <h2>Big Data Analytics</h2>
+                <p>Author: Author 5</p>
+                <p class="price">$12.99</p>
+                <button onclick="addToCart('Book Title 3', 8.99)">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="Bookt6.png" alt="Book 3">
+                <h2>Cyber Security</h2>
+                <p>Author: Author 6</p>
+                <p class="price">$18.99</p>
+                <button onclick="addToCart('Book Title 3', 8.99)">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="Bookt7.png" alt="Book 3">
+                <h2>C Programming Language</h2>
+                <p>Author: Author 7</p>
+                <p class="price">$7.99</p>
+                <button onclick="addToCart('Book Title 3', 8.99)">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="Bookt8.png" alt="Book 3">
+                <h2>Computer Programming</h2>
+                <p>Author: Author 8</p>
+                <p class="price">$11.99</p>
+                <button onclick="addToCart('Book Title 3', 8.99)">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="Bookt9.png" alt="Book 3">
+                <h2>Quantum Computing</h2>
+                <p>Author: Author 9</p>
+                <p class="price">$8.99</p>
+                <button onclick="addToCart('Book Title 3', 8.99)">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="Bookt10.png" alt="Book 3">
+                <h2>Quantum Machine Learning</h2>
+                <p>Author: Author 10</p>
+                <p class="price">$13.99</p>
+                <button onclick="addToCart('Book Title 3', 8.99)">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="Bookt11.png" alt="Book 3">
+                <h2>JEE Physics</h2>
+                <p>Author: Author 11</p>
+                <p class="price">$15.99</p>
+                <button onclick="addToCart('Book Title 3', 8.99)">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="Bookt12.png" alt="Book 3">
+                <h2>Hooked </h2>
+                <p>Author: Author 12</p>
+                <p class="price">$14.99</p>
+                <button onclick="addToCart('Book Title 3', 8.99)">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total-price">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Naveen Gorrellu. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
